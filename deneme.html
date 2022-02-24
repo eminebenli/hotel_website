@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DENEME SAYFASI</title>
+</head>
+<body>
+
+    <button id="red">KIRMIZI</button>
+    <button id="blue">MAVİ</button>
+    <button id="green">YEŞİL</button>
+    <div class="alan">
+        <p id="yazi">TEST</p>
+    </div>
+
+    <script>
+
+        let body = document.querySelector('body');
+        let metin = document.querySelector('#yazi');
+
+        document.querySelector('#red').addEventListener('click', 
+        function() {
+            body.style.backgroundColor = 'red';
+            body.style.visibility = 'hidden';
+            metin.innerHTML = "MEST";
+        }
+        );
+        
+        document.querySelector('#green').addEventListener('click', function() {
+            body.style.backgroundColor = 'green';
+            metin.innerHTML = "TEST";
+        });
+        document.querySelector('#blue').addEventListener('click', function() {
+            body.style.backgroundColor = 'blue';
+        });
+
+
+    </script>
+</body>
+</html>
